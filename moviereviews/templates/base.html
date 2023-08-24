@@ -5,17 +5,22 @@
 </head>
 
 <body>
+   
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
         <div class="container">
-            <a class="navbar-brand" href="{%url 'home' %}">Movies</a>
+            <a class="navbar-brand" href="{%url 'home' %}">
+                {% load static %}
+                    <img src="{% static 'images/movie.JPG' %}" alt="" width="30" height="24"
+                    class="d-inline-block align-text-top" />Movies</a>
             <button class="navbar-brand"  type="button" data-bstoggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="detailsPanel">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="{%url 'news'%}">News</a>
-                    <a class="nav-link" href="{%url 'news'%}#">Login</a>
-                    <a class="nav-link" href="{%url 'news'%}">Sign Up</a>
+                    <a class="nav-link" href="{%url 'news'%}">About us</a>
+                    <a class="nav-link" href="#">News</a>
+                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="#">Sign Up</a>
                 </div>
             </div>
         </div>
